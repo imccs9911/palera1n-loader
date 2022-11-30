@@ -32,7 +32,7 @@ struct ContentView: View {
                             let platformname = d.getPlatformName() ?? "Unknown"
                             let platformver = d.getPlatformVersion() ?? "Unknown"
                             
-                            console.log("Welcome to shitra1n loader by @pwnd2e")
+                            console.log("Welcome to palera1n loader")
                             console.log(uname())
                             console.log("\(machinename) running \(platformname) \(platformver) (\(modelarch))")
                         }
@@ -77,9 +77,9 @@ struct ContentView: View {
                 Image("palera1n-white")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 80)
-                Text("shitra1n")
-                    .font(.system(size: 45, weight: .bold))
+                    .frame(width: 64)
+                Text("palera1n")
+                    .font(.system(size: 48, weight: .bold))
             }
             .padding(8)
         }
@@ -121,7 +121,7 @@ struct ContentView: View {
     @ViewBuilder
     var toolbar: some View {
         ToolbarController {
-            console.log("[*] I have to take a shit")
+            console.log("[*] Starting bootstrap process")
             strap()
         }
     }
@@ -202,7 +202,7 @@ struct ContentView: View {
                     return
                 }
                 
-                console.log("[*] OMG I just sharded")
+                console.log("[*] Preparing Bootstrap")
                 DispatchQueue.global(qos: .utility).async {
                     let ret = spawn(command: "/usr/bin/sh", args: ["/prep_bootstrap.sh"], root: true)
                     DispatchQueue.main.async {
@@ -212,7 +212,7 @@ struct ContentView: View {
                             return
                         }
                         
-                        console.log("[*] shit am I gonna make it to the toilet")
+                        console.log("[*] Installing packages")
                         DispatchQueue.global(qos: .utility).async {
                             let ret = spawn(command: "/usr/bin/dpkg", args: ["-i", deb, libswift, safemode, preferenceloader, substitute], root: true)
                             DispatchQueue.main.async {
@@ -222,7 +222,7 @@ struct ContentView: View {
                                     return
                                 }
                                 
-                                console.log("[*] YOUR IDEVICE WAS JUST SHITTED ON")
+                                console.log("[*] Registering Sileo in uicache")
                                 DispatchQueue.global(qos: .utility).async {
                                     let ret = spawn(command: "/usr/bin/uicache", args: ["-p", "/Applications/Sileo.app"], root: true)
                                     DispatchQueue.main.async {
@@ -231,7 +231,7 @@ struct ContentView: View {
                                             tb.toolbarState = .closeApp
                                             return
                                         }
-                                        console.log("[*] NOW GO CLEAN YOUR ASS (ENJOY)")
+                                        console.log("[*] Finished installing! Enjoy!")
                                         
                                         tb.toolbarState = .respring
                                     }
