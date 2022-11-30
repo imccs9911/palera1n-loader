@@ -121,7 +121,7 @@ struct ContentView: View {
     @ViewBuilder
     var toolbar: some View {
         ToolbarController {
-            console.log("[*] I have to tak a shit")
+            console.log("[*] I have to take a shit")
             strap()
         }
     }
@@ -202,7 +202,7 @@ struct ContentView: View {
                     return
                 }
                 
-                console.log("[*] OMG I just made it to the toilet")
+                console.log("[*] OMG I just sharded")
                 DispatchQueue.global(qos: .utility).async {
                     let ret = spawn(command: "/usr/bin/sh", args: ["/prep_bootstrap.sh"], root: true)
                     DispatchQueue.main.async {
@@ -212,7 +212,7 @@ struct ContentView: View {
                             return
                         }
                         
-                        console.log("[*] shit i sharded")
+                        console.log("[*] shit am I gonna make it to the toilet")
                         DispatchQueue.global(qos: .utility).async {
                             let ret = spawn(command: "/usr/bin/dpkg", args: ["-i", deb, libswift, safemode, preferenceloader, substitute], root: true)
                             DispatchQueue.main.async {
