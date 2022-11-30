@@ -77,9 +77,9 @@ struct ContentView: View {
                 Image("palera1n-white")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 70)
+                    .frame(width: 65)
                 Text("shitra1n")
-                    .font(.system(size: 41, weight: .bold))
+                    .font(.system(size: 53, weight: .bold))
             }
             .padding(8)
         }
