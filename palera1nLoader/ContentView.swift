@@ -32,7 +32,7 @@ struct ContentView: View {
                             let platformname = d.getPlatformName() ?? "Unknown"
                             let platformver = d.getPlatformVersion() ?? "Unknown"
                             
-                            console.log("Welcome to shitra1n loader")
+                            console.log("Welcome to shitra1n loader by @pwnd2e")
                             console.log(uname())
                             console.log("\(machinename) running \(platformname) \(platformver) (\(modelarch))")
                         }
