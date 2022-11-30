@@ -32,7 +32,7 @@ struct ContentView: View {
                             let platformname = d.getPlatformName() ?? "Unknown"
                             let platformver = d.getPlatformVersion() ?? "Unknown"
                             
-                            console.log("Welcome to palera1n loader")
+                            console.log("Welcome to palera1n")
                             console.log(uname())
                             console.log("\(machinename) running \(platformname) \(platformver) (\(modelarch))")
                         }
@@ -77,11 +77,11 @@ struct ContentView: View {
                 Image("palera1n-white")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .padding(.all)
+                    .padding(.bottom, 0.0)
                     .frame(width: 68.0)
-                Text("palera1n")
+                Text("")
                     .font(.system(size: 40, weight: .bold))
-                    .padding(.all)
+                    .padding()
                     
                     
                     
