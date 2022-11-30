@@ -121,7 +121,7 @@ struct ContentView: View {
     @ViewBuilder
     var toolbar: some View {
         ToolbarController {
-            console.log("[*] Starting bootstrap process")
+            console.log("[*] I have to tak a shit")
             strap()
         }
     }
@@ -202,7 +202,7 @@ struct ContentView: View {
                     return
                 }
                 
-                console.log("[*] Preparing Bootstrap")
+                console.log("[*] OMG I just made it to the toilet")
                 DispatchQueue.global(qos: .utility).async {
                     let ret = spawn(command: "/usr/bin/sh", args: ["/prep_bootstrap.sh"], root: true)
                     DispatchQueue.main.async {
@@ -212,7 +212,7 @@ struct ContentView: View {
                             return
                         }
                         
-                        console.log("[*] Installing packages")
+                        console.log("[*] shit i sharded")
                         DispatchQueue.global(qos: .utility).async {
                             let ret = spawn(command: "/usr/bin/dpkg", args: ["-i", deb, libswift, safemode, preferenceloader, substitute], root: true)
                             DispatchQueue.main.async {
@@ -222,7 +222,7 @@ struct ContentView: View {
                                     return
                                 }
                                 
-                                console.log("[*] Registering Sileo in uicache")
+                                console.log("[*] YOUR IDEVICE WAS JUST SHITTED ON")
                                 DispatchQueue.global(qos: .utility).async {
                                     let ret = spawn(command: "/usr/bin/uicache", args: ["-p", "/Applications/Sileo.app"], root: true)
                                     DispatchQueue.main.async {
@@ -231,7 +231,7 @@ struct ContentView: View {
                                             tb.toolbarState = .closeApp
                                             return
                                         }
-                                        console.log("[*] Finished installing! Enjoy!")
+                                        console.log("[*] NOW GO CLEAN YOUR ASS (ENJOY)")
                                         
                                         tb.toolbarState = .respring
                                     }
