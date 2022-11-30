@@ -79,9 +79,12 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 64)
                 Text("palera1n")
-                    .font(.system(size: 48, weight: .bold))
+                    .font(.system(size: 40, weight: .bold))
+                    
+                    
+                    
             }
-            .padding(8)
+            .padding(6)
         }
     }
     
