@@ -6,7 +6,6 @@ if you want to use this versions fork  https://github.com/pwnd2e/palera1n-3.0 an
 
 
 ## to build 
-
 fork this palera1nLoader project and edit the project in Xcode then run `make` in actions to build the ipa file.
 - [download](https://github.com/Cryptiiiic) for palera1nLoader ipa
 
