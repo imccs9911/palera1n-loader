@@ -10,8 +10,8 @@
 
 - [download](https://github.com/Cryptiiiic) for palera1nLoader ipa
 
-This is the loader application that gets installed to your Tipps.app on your idevice after ramdisk which lets you bootstrap the device among other things.
-if you want to use this versions fork use https://github.com/pwnd2e/palera1n-3.0 
+This is the loader application that gets installed to your Tipps.app on your idevice after ramdisk boots which it lets you bootstrap the device among other things.
+if you want to use this versions fork  https://github.com/pwnd2e/palera1n-3.0 clone it and enjoy
 ## Building
 
 You can edit the project in Xcode and then run `make` in actions to build the ipa file.
