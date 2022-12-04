@@ -6,7 +6,7 @@ on:
   pull_request:
 
   workflow_dispatch:
-    
+
 jobs:
   build:
     runs-on: macos-latest
@@ -19,7 +19,7 @@ jobs:
 
       - name: Compile
         run: make
-      
+
       - name: Upload IPA
         uses: actions/upload-artifact@v3
         with:
